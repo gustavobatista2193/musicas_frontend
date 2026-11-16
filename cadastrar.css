@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0a10;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* PAINEL DE CADASTRO */
+
+main {
+    width: 100%;
+    max-width: 580px;
+    background: linear-gradient(145deg, #21182c, #15121c);
+    padding: 45px;
+    border: 1px solid #392b48;
+    border-top: 4px solid #e9b949;
+    border-radius: 5px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* LINK DE VOLTAR */
+
+main > a {
+    color: #e9b949;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+main > a:hover {
+    color: #ffffff;
+}
+
+/* TÍTULO */
+
+h1 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* CAMPOS */
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #d5c7e0;
+    margin-bottom: 9px;
+    letter-spacing: 0.5px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 23px;
+    background: #100e15;
+    border: 1px solid #453650;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #777080;
+}
+
+input:focus {
+    border-color: #a75bd8;
+    box-shadow: 0 0 0 2px rgba(141, 69, 189, 0.15);
+}
+
+/* BOTÃO */
+
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    background: #e9b949;
+    color: #171020;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    main {
+        padding: 30px 23px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+}
